@@ -1,5 +1,5 @@
 FROM alpine:3.10
-RUN apk add --no-cache dovecot dovecot-mysql dovecot-lmtpd dovecot-pigeonhole-plugin && \
+RUN apk add --no-cache dovecot dovecot-mysql dovecot-lmtpd dovecot-pigeonhole-plugin tzdata && \
     mkdir /run/dovecot /var/spool/mail
 COPY src /etc/dovecot/conf.d
 
