@@ -1,5 +1,6 @@
 FROM alpine:3.11
-RUN apk add --no-cache dovecot dovecot-mysql dovecot-lmtpd dovecot-pigeonhole-plugin tzdata && \
+RUN apk upgrade --no-cache && \
+    apk add --no-cache dovecot dovecot-mysql dovecot-lmtpd dovecot-pigeonhole-plugin tzdata && \
     mkdir /run/dovecot
 COPY src /etc/dovecot/conf.d
 
