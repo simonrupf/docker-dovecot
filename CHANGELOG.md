@@ -1,5 +1,8 @@
 # dovecot change log
 
+## 0.2.8
+update to Alpine 3.14 / dovecot 2.3.14
+
 ## 0.2.7
 update to Alpine 3.13 / dovecot 2.3.13, adding health check
 
@@ -23,5 +26,5 @@ fixed sieve plugin configuration, enabling use of zlib plugin for compression of
 mail storage and TLS, disable use of insecure TLS/SSL versions
 
 ## 0.1.0
-initial packaging, based on mailu alpine image with mailcow shell task manager
+initial packaging
 
