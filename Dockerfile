@@ -1,4 +1,4 @@
-FROM alpine:3.15
+FROM alpine:3.15.1
 RUN apk upgrade --no-cache && \
     apk add --no-cache dovecot dovecot-mysql dovecot-lmtpd dovecot-pigeonhole-plugin tzdata && \
     mkdir /run/dovecot && \
