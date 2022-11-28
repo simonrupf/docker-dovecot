@@ -1,7 +1,9 @@
-.PHONY: build run sh clean help
+.PHONY: all build run sh clean help
 
 NAME = dovecot
 IMAGE = simonrupf/$(NAME)
+
+all: build run
 
 build: ## Build the container image (default).
 	docker build -t $(IMAGE) .

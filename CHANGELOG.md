@@ -1,5 +1,8 @@
 # dovecot change log
 
+## 0.2.12
+update to Alpine 3.17 / dovecot 2.3.19.1 / openssl 3.0.7
+
 ## 0.2.11
 update to Alpine 3.16 / dovecot 2.3.19 / openssl 1.1.1o
 
