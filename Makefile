@@ -3,7 +3,7 @@
 NAME = dovecot
 IMAGE = simonrupf/$(NAME)
 
-all: build run
+all: build run ## Equivalent to "make build run" (default).
 
 build: ## Build the container image (default).
 	docker build -t $(IMAGE) .

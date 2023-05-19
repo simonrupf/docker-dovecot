@@ -1,4 +1,9 @@
-FROM alpine:3.17
+FROM alpine:3.18
+
+LABEL org.opencontainers.image.authors="Simon Rupf <simon@rupf.net>" \
+      org.opencontainers.image.source=https://github.com/simonrupf/docker-dovecot \
+      org.opencontainers.image.version="${VERSION}"
+
 RUN apk upgrade --no-cache && \
     apk add --no-cache dovecot dovecot-mysql dovecot-lmtpd dovecot-pigeonhole-plugin tzdata && \
     mkdir /run/dovecot && \
