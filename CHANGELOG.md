@@ -1,5 +1,8 @@
 # dovecot change log
 
+## 0.2.15
+update to Alpine 3.20 / dovecot 2.3.21-r17 / openssl 3.3.0
+
 ## 0.2.14
 update to Alpine 3.19 / dovecot 2.3.21 / openssl 3.1.4
 
@@ -45,4 +48,3 @@ mail storage and TLS, disable use of insecure TLS/SSL versions
 
 ## 0.1.0
 initial packaging
-
