@@ -1,5 +1,10 @@
 # dovecot change log
 
+## 0.3.0
+fixed dovecot 2.4 configuration, this is a breaking change, adapt your local
+configuration files as per:
+https://doc.dovecot.org/2.4.1/installation/upgrade/2.3-to-2.4.html
+
 ## 0.2.17
 update to Alpine 3.22 / dovecot 2.4.1 / openssl 3.5.0
 

@@ -8,7 +8,7 @@ RUN apk upgrade --no-cache && \
     apk add --no-cache dovecot dovecot-mysql dovecot-lmtpd dovecot-pigeonhole-plugin tzdata && \
     mkdir /run/dovecot && \
     sed -i 's|^#!/usr/bin/env bash$|#!/bin/sh|' /usr/libexec/dovecot/health-check.sh
-COPY src /etc/dovecot/conf.d
+COPY src /etc/dovecot
 
 # dovecot needs root access to bind ports below 1024, but will drop privileges
 USER root:root
